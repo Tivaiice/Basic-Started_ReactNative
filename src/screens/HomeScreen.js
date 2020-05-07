@@ -1,8 +1,19 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 
 const HomeScreen = () => {
-  return <Text style={styles.text}>HomeScreen</Text>;
+
+  const greeting = 123;
+  const arr = [123, 'adc'];
+  const name = 'ICE'; 
+
+  return (
+    <View>
+      <Text style={styles.text}>My name is {name}</Text>
+      <Text>{greeting}</Text>
+      <Text>{arr}</Text>
+    </View>
+    )
 };
 
 const styles = StyleSheet.create({
@@ -12,3 +23,4 @@ const styles = StyleSheet.create({
 });
 
 export default HomeScreen;
+ 
