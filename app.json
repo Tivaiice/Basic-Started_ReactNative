@@ -1,7 +1,9 @@
 {
   "expo": {
-    "name": "Redux-Started",
-    "slug": "Redux-Started",
+    "name": "rn-starter",
+    "slug": "rn-starter",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
     "platforms": [
       "ios",
       "android",
