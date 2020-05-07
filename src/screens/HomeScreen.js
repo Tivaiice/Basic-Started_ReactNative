@@ -1,26 +1,33 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Button, TouchableOpacity } from "react-native";
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
 
-  const greeting = 123;
-  const arr = [123, 'adc'];
-  const name = 'ICE'; 
 
+  const name = 'Íce';
   return (
     <View>
-      <Text style={styles.text}>My name is {name}</Text>
-      <Text>{greeting}</Text>
-      <Text>{arr}</Text>
+
+      <Text style={{fontSize: 20,alignSelf:'center'}}>My name is {name}</Text>
+      <Button 
+        title="Click here!! Go to Component"
+        onPress={() => navigation.navigate('Components')}    
+      />
+
+      <Button 
+        title="Click here!! Go to List"
+        onPress={() => navigation.navigate('List')}    
+      />
+
+      <Button 
+        title="Click here!! Go to Image"
+        onPress={() => navigation.navigate('Image')}    
+      />
+
     </View>
     )
 };
 
-const styles = StyleSheet.create({
-  text: {
-    fontSize: 30
-  }
-});
 
 export default HomeScreen;
  
