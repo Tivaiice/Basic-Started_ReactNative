@@ -3,7 +3,8 @@ import { View, Text, StyleSheet, Button, TouchableOpacity } from "react-native";
 
 const HomeScreen = ({navigation}) => {
 
-
+  //`
+  
   const name = 'Íce';
   return (
     <View>
@@ -22,6 +23,16 @@ const HomeScreen = ({navigation}) => {
       <Button 
         title="Click here!! Go to Image"
         onPress={() => navigation.navigate('Image')}    
+      />
+
+      <Button 
+        title="Click here!! Go to Counter"
+        onPress={() => navigation.navigate('Counter')}    
+      />
+
+      <Button 
+        title="Click here!! Go to Color"
+        onPress={() => navigation.navigate('Color')}    
       />
 
     </View>
