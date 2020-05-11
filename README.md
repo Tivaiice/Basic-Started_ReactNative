@@ -1,5 +1,1 @@
 # Redux-Started
-
-useState
-
-Reducer
